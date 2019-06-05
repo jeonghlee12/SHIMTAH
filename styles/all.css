@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background: url(../images/home-background.webp);
+    background: url(../images/home-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

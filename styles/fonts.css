@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Alegreya Sans SC';
     font-display: swap;
-    src: local('Alegreya Sans SC');
+    src: local('Alegreya Sans SC'), local('Alegreya Sans SC Regular');
     src: url('../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.eot'); /* IE9 Compat Modes */
     src: url('../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2') format('woff2'), /* Modern Browsers */
@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'Do Hyeon Regular';
     font-display: swap;
-    src: local("Do Hyeon Regular");
+    src: local("Do Hyeon"), local("Do Hyeon Regular");
     src: url('../libraries/fonts/Do_Hyeon/DoHyeon-Regular.eot'); /* IE9 Compat Modes */
     src: url('../libraries/fonts/Do_Hyeon/DoHyeon-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../libraries/fonts/Do_Hyeon/DoHyeon-Regular.woff2') format('woff2'), /* Modern Browsers */
@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'East Sea Dokdo Regular';
     font-display: swap;
-    src: local('East Sea Dokdo Regular');
+    src: local('East Sea Dokdo'), local('East Sea Dokdo Regular');
     src: url('../libraries/fonts/East_Sea_Dokdo/EastSeaDokdo-Regular.eot'); /* IE9 Compat Modes */
     src: url('../libraries/fonts/East_Sea_Dokdo/EastSeaDokdo-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../libraries/fonts/East_Sea_Dokdo/EastSeaDokdo-Regular.woff2') format('woff2'), /* Modern Browsers */
@@ -43,7 +43,7 @@
 @font-face {
     font-family: 'HanS Calli';
     font-display: swap;
-    src: local('HanS Calli');
+    src: local('HanS Calli'), local('HanS Calli Regular');
     src: url('../libraries/fonts/HanS_Calli/HanSCalli.eot'); /* IE9 Compat Modes */
     src: url('../libraries/fonts/HanS_Calli/HanSCalli.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../libraries/fonts/HanS_Calli/HanSCalli.woff2') format('woff2'), /* Modern Browsers */

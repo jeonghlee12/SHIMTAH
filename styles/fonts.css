@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: 'HanS Calli';
-    src: url('HanS Calli');
+    src: local('HanS Calli');
     src: url('../libraries/fonts/HanS_Calli/HanSCalli.eot'); /* IE9 Compat Modes */
     src: url('../libraries/fonts/HanS_Calli/HanSCalli.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../libraries/fonts/HanS_Calli/HanSCalli.woff2') format('woff2'), /* Modern Browsers */

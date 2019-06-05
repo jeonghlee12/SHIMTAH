@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: url(../images/home-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+}
+
+nav {
+    margin-top: 2.5em;
+    margin-right: 2em;
+    text-align: right;
+    flex: 0 1 auto;
+}
+
+nav a {
+    color: #FFF;
+    margin-right: 30px;
+    font-family: "Alegreya Sans SC", 'Arial', sans-serif;
+    font-size: 17pt;
+    font-weight: bold;
+    border-bottom: 0.25rem solid transparent;
+}
+
+nav a:hover {
+    border-bottom-color: #FFF;
+}
+
+nav a.active
+{
+    border-bottom-color: #FFF !important;
+}
+
+#introduction-wrapper {
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex;
+}
+
+#introduction {
+    margin: auto;
+    display: flex;
+}
+
+#introduction div {
+    display: inline-block;
+    margin: auto;
+
+}
+
+#welcome-message {
+    padding-bottom: 4em;
+}
+
+#welcome-message div {
+    display: block;
+    color: #FFF;
+}
+
+#main-message {
+    font-family: "East Sea Dokdo Regular", "Arial", sans-serif;
+    font-size: 80pt;
+}
+
+#main-message span {
+    font-family: "HanS Calli", "Arial", sans-serif;
+}
+
+#description {
+    font-family: "Do Hyeon Regular", "Arial", sans-serif;
+    font-size: 36pt;
+}
+
+#logo img {
+    max-height: 335px;
+    padding-left: 10%;
+}

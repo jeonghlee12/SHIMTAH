@@ -13,13 +13,14 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-config" content="images/favicons_and_logos/browserconfig.xml">
     <meta name="theme-color" content="#FFF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shimtah | Home</title>
 
-    <style>body,html{margin:0;height:100%}body{background:url(images/home-background.jpg);background-repeat:no-repeat;background-size:cover;display:flex;flex-flow:column}nav{margin-top:2.5em;margin-right:2em;text-align:right;flex:0 1 auto}nav a{color:#fff;margin-right:30px;font-family:"Alegreya Sans SC",Arial,sans-serif;font-size:17pt;font-weight:700;border-bottom:.25rem solid transparent;text-decoration:none}nav a.active{border-bottom-color:#fff!important}#introduction-wrapper{text-align:center;flex:1 1 auto;display:flex}#introduction{margin:auto;display:flex}#introduction div{display:inline-block;margin:auto}#welcome-message{padding-bottom:4em}#welcome-message div{display:block;color:#fff}#main-message{font-family:"East Sea Dokdo Regular",Arial,sans-serif;font-size:80pt;max-height:165px}#main-message span{font-family:"HanS Calli",Arial,sans-serif}#description{font-family:"Do Hyeon Regular",Arial,sans-serif;font-size:36pt;word-spacing:30px}#logo img{max-height:335px;padding-left:10%}@font-face{font-family:'Alegreya Sans SC';font-display:swap;src:local('Alegreya Sans SC'),local('Alegreya Sans SC Regular'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'Do Hyeon Regular';font-display:swap;src:local("Do Hyeon"),local("Do Hyeon Regular"),url(libraries/font_subsets/Do_Hyeon/DoHyeon-Regular.subset.woff2) format('woff2'),url(libraries/font_subsets/Do_Hyeon/DoHyeon-Regular.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'East Sea Dokdo Regular';font-display:swap;src:local('East Sea Dokdo'),local('East Sea Dokdo Regular'),url(libraries/font_subsets/East_Sea_Dokdo/EastSeaDokdo-Regular.subset.woff2) format('woff2'),url(libraries/font_subsets/East_Sea_Dokdo/EastSeaDokdo-Regular.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'HanS Calli';font-display:swap;src:local('HanS'),local('HanS Calli'),local('HanS Calli Regular'),url(libraries/font_subsets/HanS_Calli/HanSCalli.subset.woff2) format('woff2'),url(libraries/font_subsets/HanS_Calli/HanSCalli.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
-    <link rel="preload" href="styles/all.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
+    <style>@font-face{font-family:'Alegreya Sans SC';font-display:swap;src:local('Alegreya Sans SC'),local('Alegreya Sans SC Regular'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'Do Hyeon Regular';font-display:swap;src:local("Do Hyeon"),local("Do Hyeon Regular"),url(libraries/font_subsets/Do_Hyeon/DoHyeon-Regular.subset.woff2) format('woff2'),url(libraries/font_subsets/Do_Hyeon/DoHyeon-Regular.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'East Sea Dokdo Regular';font-display:swap;src:local('East Sea Dokdo'),local('East Sea Dokdo Regular'),url(libraries/font_subsets/East_Sea_Dokdo/EastSeaDokdo-Regular.subset.woff2) format('woff2'),url(libraries/font_subsets/East_Sea_Dokdo/EastSeaDokdo-Regular.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'HanS Calli';font-display:swap;src:local('HanS'),local('HanS Calli'),local('HanS Calli Regular'),url(libraries/font_subsets/HanS_Calli/HanSCalli.subset.woff2) format('woff2'),url(libraries/font_subsets/HanS_Calli/HanSCalli.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
+    <link rel="preload" href="styles/mobile.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="styles/fonts.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel='stylesheet' type='text/css' href='styles/all.css'>
+        <link rel='stylesheet' type='text/css' href='styles/mobile.css'>
         <link rel='stylesheet' type='text/css' href='styles/fonts.css'>
     </noscript>
     <script>
@@ -48,7 +49,7 @@
                     Welcome to SHIMTAH <span>심타</span>
                 </div>
                 <div id="description">
-                    Traditional Korean Drumming Club
+                    Traditional Korean <span><br/></span>Drumming Club
                 </div>
             </div>
             <div id="logo">
@@ -60,9 +61,9 @@
         </div>
     </div>
     <script>
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-</script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script>
 </body>
 </html>

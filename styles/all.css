@@ -12,8 +12,8 @@ body {
 }
 
 .menu-container {
-    display:none;
     text-align: right;
+    z-index: 2;
 }
 
 .hamburger-icon {
@@ -33,6 +33,7 @@ body {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-4px, 4px);
   transform: rotate(-45deg) translate(-4px, 4px);
+  background-color: #000;
 }
 
 .change .bar2 {opacity: 0;}
@@ -40,28 +41,41 @@ body {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-5px, -4px);
   transform: rotate(45deg) translate(-5px, -4px);
+  background-color: #000;
 }
 
-
 nav {
-    margin-top: 2.5em;
-    margin-right: 2em;
-    text-align: right;
+    z-index: 0;
+    right: 0;
+    position: fixed;
     flex: 0 1 auto;
+    height: 100%;
+    transition: 0.4s;
+    width: 0px;
+    background-color: #000;
+    padding-top: 5em;
+    overflow-x: hidden;
+}
+
+nav.change {
+    width: 100%;
+    background-color: #FFF;
 }
 
 nav a {
-    color: #FFF;
-    margin-right: 30px;
+    color: #000;
     font-family: "Alegreya Sans SC", 'Arial', sans-serif;
     font-size: 17pt;
     font-weight: bold;
     border-bottom: 0.25rem solid transparent;
     text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 2em auto;
 }
 
 nav a:hover {
-    border-bottom-color: #FFF;
+    color: #4f4f4f;
 }
 
 #introduction-wrapper {
@@ -73,6 +87,7 @@ nav a:hover {
 #introduction {
     margin: auto;
     display: flex;
+    flex-direction: column;
 }
 
 #introduction div {
@@ -81,7 +96,7 @@ nav a:hover {
 }
 
 #welcome-message {
-    padding-bottom: 4em;
+    padding-bottom: 1em;
 }
 
 #welcome-message div {
@@ -91,8 +106,7 @@ nav a:hover {
 
 #main-message {
     font-family: "East Sea Dokdo Regular", "Arial", sans-serif;
-    font-size: 80pt;
-    max-height: 165px;
+    font-size: 25pt;
 }
 
 #main-message span {
@@ -101,64 +115,73 @@ nav a:hover {
 
 #description {
     font-family: "Do Hyeon Regular", "Arial", sans-serif;
-    font-size: 36pt;
-    word-spacing: 30px;
+    font-size: 16pt;
+    text-align: center;
+    word-spacing: normal;
 }
 
 #logo img {
-    max-height: 335px;
-    padding-left: 5em;
+    max-height: 180px;
+    padding-left: 0;
 }
 
-@media (max-width: 1400px) {
-    #logo img {padding-left: 10%}
+@media (min-width: 350px) {
+    #main-message {font-size:30pt}
+    #description {font-size:20pt}
 }
 
-@media (max-width: 1370px) {
+@media (min-width: 500px) {
+    #welcome-message {padding-bottom: 1em}
     #main-message {
-        font-size: 70pt;
-        max-height: 145px;
+        font-size:40pt;
+        max-height: 85px;
     }
-    #description {font-size: 30pt}
-    #logo img {
-        max-height: 330px;
-        padding-left: 15%;
-    }
+    #description {word-spacing: 10px}
+    #description span {display: none}
+    #logo img {max-height: 200px}
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 600px) {
+    #welcome-message {padding-bottom: 2em}
     #main-message {
-        font-size: 65pt;
-        max-height: 137px;
-    }
-    #description {font-size: 25pt}
-    #logo img {
-        max-height: 300px;
-        padding-left: 5em;
-    }
-}
-
-@media (max-width: 1200px) {
-    #main-message {
-        font-size: 55pt;
-        max-height: 115px;
+        font-size: 45pt;
+        max-height: 95px;
     }
     #description {
-        font-size: 25pt;
+        font-size: 22pt;
         word-spacing: 15px;
     }
-    #logo img {
-        max-height: 290px;
-        padding-left: 10%;
-    }
+    #logo img {max-height: 220px}
 }
 
-@media (max-width: 1080px) {
-    nav {margin-right: 1em}
+@media (min-width: 768px) {
+    .menu-container {display: none}
+    nav {
+        display: block;
+        height: auto;
+        width: auto;
+        position: relative;
+        margin-top: 2.5em;
+        margin-right:2em;
+        text-align: right;
+        right: initial;
+        background-color: transparent;
+        padding: 0;
+        overflow-x: initial;
+        transition: 0s;
+    }
     nav a {
-        margin-right: 15px;
+        margin: auto;
+        margin-left:15px;
+        display: inline;
+        color: #FFF;
         font-size: 11pt;
     }
+    nav a:hover {
+        color: #FFF;
+        border-bottom-color: #FFF
+    }
+    #introduction {flex-direction: row}
     #main-message {
         font-size: 40pt;
         max-height: 80px;
@@ -173,19 +196,57 @@ nav a:hover {
     }
 }
 
-@media (max-width: 740px) {
-    #introduction {flex-direction: column}
-    #welcome-message {padding-bottom: 1em}
+@media (min-width: 1024px) {
+    nav a {
+        margin-left: 20px;
+        font-size: 15pt;
+    }
+    #main-message {
+        font-size: 55pt;
+        max-height: 115px;
+    }
+    #description {
+        font-size: 25pt;
+        word-spacing: 15px;
+    }
     #logo img {
-        max-height: 210px;
-        padding-left: 0;
-        padding-bottom: 2em;
+        max-height: 290px;
+        padding-left: 10%;
     }
 }
 
-@media only screen and (max-width: 640px) {
-    .menu-container {display:block}
-    nav {
-        display: none;
+@media (min-width: 1200px) {
+    nav a {
+        margin-left: 30px;
+        font-size: 17pt;
+    }
+    #main-message {
+        font-size: 65pt;
+        max-height: 137px;
+    }
+    #description {font-size: 25pt}
+    #logo img {
+        max-height: 300px;
+        padding-left: 5em;
+    }
+}
+
+@media (min-width: 1400px) {
+    nav {margin-right:3em}
+    nav a {
+        margin-left: 30px;
+        font-size: 17pt;
+    }
+    #main-message {
+        font-size: 80pt;
+        max-height: 165px;
+    }
+    #description {
+        font-size: 36pt;
+        word-spacing: 30px;
+    }
+    #logo img {
+        max-height: 335px;
+        padding-left: 5em;
     }
 }

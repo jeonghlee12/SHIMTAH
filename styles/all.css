@@ -27,6 +27,10 @@ body {
   height: 2px;
   background-color: #FFF;
   margin: 4px 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -50,6 +54,10 @@ nav {
     position: fixed;
     flex: 0 1 auto;
     height: 100%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
     width: 0px;
     background-color: #000;
@@ -168,6 +176,10 @@ nav a:hover {
         background-color: transparent;
         padding: 0;
         overflow-x: initial;
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        -ms-transition: 0s;
+        -o-transition: 0s;
         transition: 0s;
     }
     nav a {

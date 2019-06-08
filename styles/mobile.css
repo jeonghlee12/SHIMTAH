@@ -75,7 +75,7 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom-color: #000;
+    color: #4f4f4f;
 }
 
 #introduction-wrapper {
@@ -177,7 +177,10 @@ nav a:hover {
         color: #FFF;
         font-size: 11pt;
     }
-    nav a:hover {border-bottom-color: #FFF}
+    nav a:hover {
+        color: #FFF;
+        border-bottom-color: #FFF
+    }
     #introduction {flex-direction: row}
     #main-message {
         font-size: 40pt;

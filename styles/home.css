@@ -133,9 +133,33 @@ nav a:hover {
     padding-left: 0;
 }
 
+.icons {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 20pt;
+}
+
+.icons div#space {
+    display: inline-block;
+    width: 0.1em
+}
+
+.icons a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #A9A9A9;
+}
+
 @media (min-width: 350px) {
     #main-message {font-size:30pt}
     #description {font-size:20pt}
+    .icons {
+        padding-top: 0;
+        font-size: 23pt;
+    }
 }
 
 @media (min-width: 500px) {
@@ -147,6 +171,7 @@ nav a:hover {
     #description {word-spacing: 10px}
     #description span {display: none}
     #logo img {max-height: 200px}
+    .icons {font-size: 25pt}
 }
 
 @media (min-width: 600px) {
@@ -160,6 +185,7 @@ nav a:hover {
         word-spacing: 15px;
     }
     #logo img {max-height: 220px}
+    .icons {font-size: 30pt}
 }
 
 @media (min-width: 768px) {
@@ -206,6 +232,7 @@ nav a:hover {
         max-height: 210px;
         padding-left: 15%;
     }
+    .icons div {width: 25px}
 }
 
 @media (min-width: 1024px) {
@@ -213,6 +240,7 @@ nav a:hover {
         margin-left: 20px;
         font-size: 15pt;
     }
+    #introduction {margin-bottom: 6em}
     #main-message {
         font-size: 55pt;
         max-height: 115px;

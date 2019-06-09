@@ -11,20 +11,18 @@
     content: "\f09a"}
 .fa-youtube:before {
     content: "\f167"}
-/*
+
 @font-face {
     font-family: "Font Awesome 5 Brands";
     font-style: normal;
     font-weight: normal;
     font-display: auto;
     src: url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.eot'); /* IE9 Compat Modes */
-    /* src: local("Font Awesome 5 Brands"), local("Font Awesome 5 Brands Regular"),
+    src: local("Font Awesome 5 Brands"), local("Font Awesome 5 Brands Regular"),
         url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        /* url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2') format('woff2'), /* Modern Browsers */
-        /* url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.woff') format('woff'), /* Modern Browsers */
-        /* url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.ttf') format('truetype'), /* Safari, Android, iOS */
-        /* url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.svg') format('svg'); /* Legacy iOS */
-/*} */
+        url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../libraries/font_subsets/fontawesome/fa-brands-400.subset.svg') format('svg'); /* Legacy iOS */
+}
 .fab {
     font-family: "Font Awesome 5 Brands"
 }

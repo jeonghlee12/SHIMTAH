@@ -3,8 +3,13 @@ html, body {
     height: 100%;
 }
 
+.webp body {
+    background-image: url(../images/home-background.webp);
+}
+.no-webp body {
+    background-image: url(../images/home-background.jpg);
+}
 body {
-    background: url(../images/home-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

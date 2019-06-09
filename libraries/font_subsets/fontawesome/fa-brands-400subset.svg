@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sun Jun  9 04:23:40 2019
+ By www-data
+Copyright (c) Font Awesome
+</metadata>
+<defs>
+<font id="FontAwesome5Brands-Regular" horiz-adv-x="512" >
+  <font-face 
+    font-family="Font Awesome 5 Brands Regular"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="8 -53 561 440"
+    underline-thickness="25"
+    underline-position="-51"
+    unicode-range="U+F09A-F167"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name="uniF09A" unicode="&#xf09a;" 
+d="M504 192q0 -92 -60 -161.5t-149 -83.5v173h58l11 72h-69v47q0 38 40 38h31v61q-28 5 -55 5q-29 0 -49.5 -11t-32.5 -33t-12 -52v-55h-63v-72h63v-173q-89 14 -149 83.5t-60 161.5q0 103 72.5 175.5t175.5 72.5t175.5 -72.5t72.5 -175.5z" />
+    <glyph glyph-name="uniF167" unicode="&#xf167;" horiz-adv-x="576" 
+d="M550 324q3 -12 5.5 -30t3.5 -35.5t1.5 -32.5t0.5 -25v-9q0 -90 -11 -133q-5 -17 -18 -30t-31 -18q-19 -5 -72 -7.5t-97 -3.5h-44q-171 0 -213 11q-39 11 -49 48q-5 19 -7.5 52.5t-3.5 56.5v24q0 89 11 132q5 18 18 31t31 18q19 5 72 7.5t97 3.5h44q171 0 213 -11
+q18 -5 31 -18t18 -31zM232 110l143 82l-143 81v-163z" />
+  </font>
+</defs></svg>

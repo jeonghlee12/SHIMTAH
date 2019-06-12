@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' class="no-js">
+<html lang='en' class="no-js test">
 <head>
     <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -47,7 +47,7 @@
     <style>body,html{margin:0;height:100%}.webp body{background-image:url(images/home-background.webp)}.no-webp body,.no-js body{background-image:url(images/home-background.jpg)}body{background-repeat:no-repeat;background-size:cover;display:flex;flex-flow:column}.menu-container{text-align:right;z-index:2}.hamburger-icon{display:inline-block;margin-top:1em;margin-right:1em}.bar{width:22px;height:2px;background-color:#fff;margin:4px 0}nav{z-index:0;flex:0 1 auto}nav a{font-family:"Alegreya Sans SC",Arial,sans-serif;font-weight:700;border-bottom:.25rem solid transparent;text-decoration:none;text-align:center}#introduction-wrapper{text-align:center;flex:1 1 auto;display:flex}#introduction{margin:auto;display:flex}#introduction div{display:inline-block;margin:auto}#welcome-message div{display:block;color:#fff}#main-message{font-family:"East Sea Dokdo Regular",Arial,sans-serif}#main-message span{font-family:"HanS Calli",Arial,sans-serif}#description{font-family:"Do Hyeon Regular",Arial,sans-serif;text-align:center}.icons{text-align:center;padding:1em 0;font-size:20pt}#space{display:inline-block;width:.1em}.icons a{color:#fff;text-decoration:none}</style>
 
     <link rel="preload" href="styles/home-external.min.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="styles/home.min.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/home.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel='stylesheet' type='text/css' href='styles/home-external.min.css'>
         <link rel='stylesheet' type='text/css' href='styles/home.min.css'>
@@ -91,16 +91,35 @@
             </div>
         </div>
     </div>
+    <main>
+        content to be filled
+    </main>
     <div class="icons">
-        <a href="https://www.facebook.com/shimtah" target="_blank" data-toggle="tooltip" title="Facebook" data-placement="bottom"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/shimtah" target="_blank" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fab fa-facebook"></i></a>
         <div id="space"></div>
-        <a href="https://www.youtube.com/user/CornellShimtah" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="bottom"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.youtube.com/user/CornellShimtah" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="top"><i class="fab fa-youtube"></i></a>
     </div>
 
     <script>
         function toggleNav(x) {
           x.classList.toggle("change");
           document.getElementsByTagName('nav')[0].classList.toggle("change");
+        }
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            scroll_length = window.innerHeight * 0.6;
+            if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
+                document.getElementsByTagName("nav")[0].classList.add("stuck");
+            }
+            else {
+                if (document.getElementsByTagName("nav")[0].classList.contains("stuck")) {
+                    document.getElementsByTagName("nav")[0].classList.remove("stuck");
+                    document.getElementsByTagName("nav")[0].classList.add("unstuck");
+                    setTimeout(function() {
+                        document.getElementsByTagName("nav")[0].classList.remove("unstuck")
+                    }, 150);
+                }
+            }
         }
         window.addEventListener('DOMContentLoaded', function() {
             $('[data-toggle="tooltip"]').tooltip();

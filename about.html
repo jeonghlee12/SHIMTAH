@@ -28,8 +28,114 @@
 	<meta property="og:url" content="">
 	<meta property="og:image" content="shimtah-logo-black-white">
     <title>Shimtah | About</title>
+
+    <link rel="preload" href="libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2" as="font" type="font/woff2" crossorigin>
+    <style>@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;src:local("Font Awesome 5 Brands"),local("Font Awesome 5 Brands Regular"),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2) format('woff2'),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
+    <link rel='stylesheet' type='text/css' href='styles/about.css'>
+    <link rel="preload" href="styles/home-external.min.css" as='style' onload="this.onload=null;this.rel='stylesheet'">
+
+    <script>
+    !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <div>
+        <div id="nav-container">
+            <div id="logo-container">
+                    <img src="images/favicons_and_logos/shimtah-logo.png" alt="Shimtah logo black">
+                    <img src="images/favicons_and_logos/favicon.png" alt="Shimtah logo without text" class="hidden">
 
+            </div>
+            <div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a>Instruments</a>
+                    <a>Photo Album</a>
+                    <a>Videos</a>
+                </nav>
+            </div>
+        </div>
+        <div id="nav-space">
+        </div>
+    </div>
+    <div style="background-color: blue">
+        <p style="margin: 0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum purus at neque laoreet, ullamcorper auctor libero malesuada. Suspendisse potenti. Nunc iaculis faucibus mauris, eu facilisis felis maximus nec. Morbi pellentesque, sapien in tincidunt ultricies, augue urna tincidunt lacus, nec lobortis neque ante sit amet velit. Donec at ipsum ac augue auctor viverra. Integer eget erat congue, vehicula tortor vel, porttitor elit. Morbi sed odio mauris. Morbi eu posuere diam. Nullam vitae metus consequat, laoreet ligula sed, posuere metus. Aliquam erat volutpat. Nam sed lobortis mauris, at fringilla mi. Aenean nec gravida elit. Integer fermentum libero nec est vestibulum, sed faucibus dolor ullamcorper.
+        </p>
+        <p>
+            Donec vel velit ac est rhoncus commodo. Aliquam mollis sapien ut ante convallis sodales. Quisque nec consectetur libero. In semper odio nisl, vel bibendum magna ullamcorper eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam eu odio sit amet libero ornare euismod et id libero. Curabitur risus metus, mattis eget ultrices eu, pulvinar vitae dolor. Sed vel iaculis ipsum. Donec gravida ornare neque, ac semper nisi consequat a. Nullam euismod ultricies dignissim.
+        </p>
+        <p>
+            Curabitur luctus nisl sit amet enim interdum, vitae posuere lectus mattis. Suspendisse rutrum nibh nulla, vel tristique est imperdiet in. Sed rhoncus, velit vel pretium ullamcorper, ipsum sapien vestibulum urna, in lobortis sapien mauris vitae nisl. Praesent quis malesuada purus, a mollis ex. Vestibulum elit nisi, placerat id pulvinar eget, molestie ut mauris. In ornare libero elit, eget elementum arcu aliquam sed. Quisque commodo pulvinar ipsum, nec efficitur sem suscipit ac. Nullam et diam vulputate, faucibus magna quis, iaculis justo. Nulla vel fringilla dolor.
+        </p>
+        <p>
+            Mauris lobortis convallis odio convallis faucibus. Nullam suscipit ligula tortor. Sed ut tortor eget sapien convallis lacinia sed id sapien. Sed consectetur nisl in pulvinar sagittis. Integer commodo, mi a fringilla fermentum, justo metus ultrices magna, quis fringilla augue tellus et nisl. Duis aliquet congue eleifend. Fusce id urna tincidunt arcu dignissim placerat vitae at enim. Aenean ac tortor in risus maximus pretium ac et dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce luctus nibh eu magna feugiat bibendum.
+        </p>
+        <p>
+            Morbi volutpat finibus enim. Nunc at consequat neque. Vivamus quis ligula massa. Nunc accumsan, ligula ac tristique volutpat, lacus lectus volutpat augue, eu condimentum ipsum libero eget sapien. Suspendisse mattis arcu vitae metus volutpat, eu malesuada leo vestibulum. Pellentesque lectus eros, commodo vel elementum quis, semper non nibh. Nulla sed sagittis risus. Nullam eget cursus turpis. Suspendisse egestas sem arcu, a porta quam vehicula sed. Integer luctus dapibus nibh at facilisis. Fusce gravida elit nec ante accumsan, in lacinia justo rhoncus. Aliquam ac purus rhoncus nunc commodo gravida sit amet mattis dolor. Integer sem lacus, volutpat sed placerat sed, mattis non erat. Fusce ante massa, dictum rhoncus porttitor eget, malesuada vel velit. Integer tempor ipsum sem, non efficitur enim commodo congue.
+        </p>
+        <p>
+            Donec placerat justo et nisi condimentum, at scelerisque sem faucibus. Pellentesque ac urna ac orci elementum faucibus non at diam. Aliquam erat volutpat. Cras nec pulvinar libero, at imperdiet dolor. Curabitur sed nulla eget urna vulputate commodo. Aliquam nunc mi, rutrum et convallis sed, ornare quis neque. Suspendisse pharetra interdum orci, et vehicula lectus pretium quis. Aenean aliquet lacinia elit in posuere. Quisque gravida commodo velit, ut ultrices sapien porta quis. Vivamus tempor dui ac mi feugiat maximus.
+        </p>
+        <p>
+            Vestibulum euismod in ipsum sed dictum. Nulla vehicula mollis diam, quis congue lectus egestas interdum. Integer eget dolor in massa commodo interdum quis ac justo. Morbi dictum est sit amet dolor lacinia aliquet. Pellentesque feugiat rutrum leo, sed suscipit elit pharetra vel. Vestibulum quam sapien, rutrum ut nibh ac, scelerisque vulputate magna. Nam in eros risus. Ut consequat tempus nisi, ac eleifend diam. In id ullamcorper purus. Vestibulum a convallis felis. Nullam efficitur ac neque nec iaculis. Nulla id rhoncus sem. Nullam ut felis vitae erat posuere faucibus. Curabitur eget erat in ipsum sollicitudin volutpat. Nam bibendum, lorem volutpat viverra varius, purus ligula tincidunt ligula, vitae malesuada magna orci et felis.
+        </p>
+        <p>
+            Aliquam feugiat felis nec gravida vestibulum. Cras convallis leo in ligula varius, nec cursus erat tincidunt. Suspendisse auctor ac erat vitae porttitor. Donec at cursus lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Aenean erat urna, porta id felis vel, vulputate sodales velit. Nulla facilisi. Aliquam facilisis nec nibh ut consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ullamcorper malesuada augue, quis aliquet justo tincidunt vel. Fusce sed nisi at quam scelerisque accumsan ut sit amet arcu. Maecenas facilisis ipsum ac tristique tristique. Fusce interdum tortor ut euismod pretium. Sed sem sapien, auctor quis lorem dignissim, gravida mattis libero.
+        </p>
+        <p>
+            Morbi condimentum fringilla sagittis. Maecenas suscipit hendrerit dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque tincidunt est vel orci molestie, in accumsan purus posuere. Sed commodo rhoncus felis. Integer suscipit, ligula sodales elementum ullamcorper, dui mi laoreet lectus, sed malesuada nibh justo a sapien. Donec sapien magna, lobortis id feugiat et, pharetra vel leo. Maecenas rutrum orci dapibus, efficitur lorem quis, ultrices mi. Morbi et ligula lectus. Suspendisse potenti. Maecenas id elit in est cursus vulputate vitae ac tortor. Morbi vestibulum, urna scelerisque bibendum dictum, odio ante molestie lectus, id accumsan neque lectus in massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce euismod eros et justo sodales, id rhoncus lorem porta. Suspendisse congue ligula a ex ultrices bibendum. Aliquam id sem pharetra, accumsan elit non, iaculis nibh.
+        </p>
+        <p>
+            Mauris ut magna nibh. Suspendisse malesuada massa sit amet sapien dignissim, non placerat justo porttitor. Ut nec libero imperdiet, fringilla nunc sit amet, imperdiet eros. Morbi in lacus eget ipsum mattis tincidunt. Quisque in erat vitae lacus iaculis vulputate vitae eget est. Etiam feugiat leo eu ante fermentum, at consectetur arcu sagittis. Suspendisse potenti. Vestibulum vitae ultrices lectus, sit amet dapibus diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin et ultricies neque, id elementum urna.
+        </p>
+        <p>
+            Mauris gravida imperdiet massa, vel suscipit magna facilisis vel. Proin fermentum commodo magna eget suscipit. Nam euismod nisl sit amet ante fringilla vulputate. Maecenas vitae lacinia est. Ut suscipit mi tincidunt metus rutrum, eu egestas lectus feugiat. Praesent porttitor odio quis quam vulputate, id aliquet felis vehicula. Ut eleifend, erat non maximus convallis, nunc mauris aliquet purus, vel semper libero nibh a odio. Nullam gravida venenatis tristique. Sed convallis venenatis eros vel ultrices. Nulla vitae dolor sit amet felis ullamcorper eleifend eget ut dolor. Mauris faucibus elementum finibus. Integer sed tincidunt tellus, sit amet elementum velit. Quisque eu massa purus.
+        </p>
+        <p style="margin:0">
+            Curabitur pellentesque tempus porta. Sed vitae velit ac diam tincidunt scelerisque. Mauris a tempor nisl. Proin iaculis justo in venenatis sodales. Pellentesque eleifend urna ut erat gravida tempus. Sed ornare est quis tortor mollis, ac facilisis ligula varius. Maecenas at nulla tempor erat suscipit pharetra ut at lorem. Ut a elit euismod justo finibus auctor. Nullam vitae lectus justo. Duis venenatis hendrerit erat sit amet porttitor. Fusce volutpat metus non mauris sollicitudin, sed consectetur nisi malesuada. Praesent aliquam in magna id fringilla. Aenean lobortis semper dui eget interdum. Sed sed nibh efficitur, commodo sapien ut, pharetra sapien. Sed pharetra urna ut elementum porttitor.
+        </p>
+    </div>
+    <div class="icons">
+        <a href="https://www.facebook.com/shimtah" target="_blank" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fab fa-facebook"></i></a>
+        <div id="space"></div>
+        <a href="https://www.youtube.com/user/CornellShimtah" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="top"><i class="fab fa-youtube"></i></a>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            scroll_length = 120;
+            if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
+                document.getElementById("nav-container").style.height = "calc(50px + 1em)";
+                document.getElementById("nav-space").style.height = "calc(50px + 1em)";
+                document.getElementById("logo-container").style.height = "50px";
+                document.getElementById("logo-container").style.width = "50px";
+                document.getElementById("logo-container").style.margin =  "0.5em 0 0.5em 3em";
+                document.getElementById("logo-container").getElementsByTagName("img")[0].classList.add("hidden");
+                document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "50px";
+                document.getElementById("logo-container").getElementsByTagName("img")[1].classList.remove("hidden");
+                document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "50px";
+
+            }
+            if (document.body.scrollTop < 70 && document.documentElement.scrollTop < 70) {
+                document.getElementById("nav-container").style.height = "calc(130px + 1em)";
+                document.getElementById("nav-space").style.height = "calc(130px + 1em)";
+                document.getElementById("logo-container").style.height = "130px";
+                document.getElementById("logo-container").style.width = "130px";
+                document.getElementById("logo-container").style.margin = "0.5em 0 0.5em 3em";
+                document.getElementById("logo-container").getElementsByTagName("img")[0].classList.remove("hidden");
+                document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "130px";
+                document.getElementById("logo-container").getElementsByTagName("img")[1].classList.add("hidden");
+                document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "130px";
+            }
+        }
+    </script>
 </body>
 </html>

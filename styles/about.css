@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#nav-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    transition: 0.3s;
+    height: calc(130px + 1em);
+}
+
+#nav-container div {
+    margin: auto 0;
+}
+
+#nav-container #logo-container {
+    height: 130px;
+    width: 130px;
+    margin: 0.5em auto;
+    margin-left: 3em;
+    margin-right: 0;
+    transition: 0.3s;
+}
+
+#logo-container img {
+    height: 130px;
+    transition: 0.15s linear;
+    opacity: 1;
+    position: fixed;
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+nav {margin-left: 1em;}
+
+nav a {
+    color: #000;
+    font-family: "Alegreya Sans SC", 'Arial', sans-serif;
+    font-weight: bold;
+    border-bottom: 0.25rem solid transparent;
+    text-decoration: none;
+    margin-left:15px;
+
+    font-size: 17pt;
+}
+
+nav a:hover {
+    color: #777;
+    border-bottom-color: #777 !important;
+}
+
+nav a.active {border-bottom-color: #000}
+
+#nav-space {height: calc(130px + 1em)}
+
+.icons {
+    text-align: center;
+    font-size: 20pt;
+    background-color: #333;
+    padding: 0.6em 0;
+}
+
+#space {
+    display: inline-block;
+    width: 0.1em
+}
+
+.icons a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #A9A9A9;
+}
+
+@media (min-width: 350px) {
+    .icons {font-size: 23pt}
+}
+
+@media (min-width: 500px) {
+    .icons {font-size: 25pt}
+}
+
+@media (min-width: 600px) {
+    .icons {font-size: 30pt}
+}
+
+@media (min-width: 768px) {
+    #space {width: 25px}
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}

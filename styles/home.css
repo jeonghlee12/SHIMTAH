@@ -158,37 +158,43 @@ body {
   background-color: #000;
 }
 
-nav {
+#nav-container {
     z-index: 0;
     position: fixed;
     right: 0;
+    width: 0px;
     height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    width: 0px;
-    background-color: #000;
-    padding-top: 5em;
-    overflow-x: hidden;
 }
 
-nav.change {
+#nav-container.change {
     width: 100%;
     background-color: #FFF;
 }
 
+#logo-container img {
+	height: 100px;
+	margin: auto;
+	margin-top: 2em;
+	display: block;
+}
+
 nav a {
+    display: block;
     color: #000;
     font-family: "Alegreya Sans SC", 'Arial', sans-serif;
     font-size: 17pt;
     font-weight: bold;
     border-bottom: 0.25rem solid transparent;
     text-decoration: none;
-    display: block;
     text-align: center;
-    margin: 2em auto;
+    margin: 1.9em auto;
 }
 
 nav a:hover {
@@ -313,8 +319,8 @@ main {
 
 @media (min-width: 768px) {
     .menu-container {display: none}
-    nav {
-        display: block;
+	#nav-container {
+		display: block;
         width: 100%;
         height: auto;
         position: absolute;
@@ -332,7 +338,8 @@ main {
         -ms-transition: 0s;
         -o-transition: 0s;
         transition: 0s;
-    }
+	}
+	#logo-container {display: none}
     nav a {
         margin: auto;
         margin-left:15px;
@@ -344,7 +351,7 @@ main {
         color: #FFF;
         border-bottom-color: #FFF
     }
-    .stuck {
+    #nav-container.stuck {
         position: fixed;
         -webkit-animation: slideDown 0.35s;
         -moz-animation: slideDown 0.35s;
@@ -354,7 +361,7 @@ main {
         border-bottom: 1px solid #e7e7e7;
         background-color: #FFF !important;
     }
-    .unstuck {
+    #nav-container.unstuck {
         -webkit-animation: slideUp 0.2s;
         -moz-animation: slideUp 0.2s;
         -ms-animation: slideUp 0.2s;
@@ -419,7 +426,7 @@ main {
 }
 
 @media (min-width: 1400px) {
-    nav {padding-right:3em}
+    #nav-container {padding-right:3em}
     nav a {
         margin-left: 30px;
         font-size: 17pt;

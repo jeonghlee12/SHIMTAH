@@ -59,20 +59,20 @@
     from
     {
         opacity: 0;
-        transform: translate3d(0, -100%, 0);
         -webkit-transform: translate3d(0, -100%, 0);
         -moz-transform: translate3d(0, -100%, 0);
         -ms-transform: translate3d(0, -100%, 0);
         -o-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
     to
     {
         opacity: 1;
-        transform: none;
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
+        transform: none;
     }
 }
 
@@ -81,20 +81,20 @@
     from
     {
         opacity: 1;
-        transform: none;
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
+        transform: none;
     }
     to
     {
         opacity: 0;
-        transform: translate3d(0, -100%, 0);
         -webkit-transform: translate3d(0, -100%, 0);
         -moz-transform: translate3d(0, -100%, 0);
         -ms-transform: translate3d(0, -100%, 0);
         -o-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
 }
 
@@ -162,7 +162,6 @@ nav {
     z-index: 0;
     position: fixed;
     right: 0;
-    flex: 0 1 auto;
     height: 100%;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;

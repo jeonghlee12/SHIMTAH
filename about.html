@@ -30,7 +30,7 @@
     <title>Shimtah | About</title>
 
     <link rel="preload" href="libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2" as="font" type="font/woff2" crossorigin>
-    <style>@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;src:local("Font Awesome 5 Brands"),local("Font Awesome 5 Brands Regular"),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2) format('woff2'),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
+    <style>@font-face{font-family:'Alegreya Sans SC';font-display:swap;src:local('Alegreya Sans SC'),local('Alegreya Sans SC Regular'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;src:local("Font Awesome 5 Brands"),local("Font Awesome 5 Brands Regular"),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2) format('woff2'),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
     <link rel="stylesheet" type="text/css" href="styles/about.css">
     <link rel="preload" href="styles/home-external.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -41,20 +41,28 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
 </head>
 <body>
+   <div class="menu-container">
+        <div class="hamburger-icon" onclick="toggleNav(this)">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+    </div>
     <div id="nav-container">
         <div id="logo-container">
+        	<picture>
+            	<source srcset="images/favicons_and_logos/shimtah-logo.webp" type="image/webp">
                 <img src="images/favicons_and_logos/shimtah-logo.png" alt="Shimtah logo black">
-                <img src="images/favicons_and_logos/favicon.png" alt="Shimtah logo without text" class="hidden">
+            </picture>
+            <img src="images/favicons_and_logos/favicon.png" alt="Shimtah logo without text" class="hidden">
         </div>
-        <div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a>Instruments</a>
-                <a>Photo Album</a>
-                <a>Videos</a>
-            </nav>
-        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a>Instruments</a>
+            <a>Photo Album</a>
+            <a>Videos</a>
+        </nav>
     </div>
     <main style="background-color: blue">
         <p style="margin: 0">
@@ -100,34 +108,40 @@
         <a href="https://www.youtube.com/user/CornellShimtah" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="top"><i class="fab fa-youtube"></i></a>
     </div>
     <script>
+		function toggleNav(x) {
+          x.classList.toggle("change");
+          document.getElementById("nav-container").classList.toggle("change");
+        }
         window.addEventListener('DOMContentLoaded', function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
-        window.onscroll = function() {scrollFunction()};
+		if (window.innerWidth >= 768) {
+			window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-            scroll_length = 120;
-            if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
-                document.getElementById("nav-container").style.height = "calc(50px + 1em)";
-                document.getElementById("logo-container").style.height = "50px";
-                document.getElementById("logo-container").style.width = "50px";
-                document.getElementById("logo-container").style.margin =  "0.5em 0 0.5em 3em";
-                document.getElementById("logo-container").getElementsByTagName("img")[0].classList.add("hidden");
-                document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "50px";
-                document.getElementById("logo-container").getElementsByTagName("img")[1].classList.remove("hidden");
-                document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "50px";
+			function scrollFunction() {
+				scroll_length = 120;
+				if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
+					document.getElementById("nav-container").style.height = "calc(50px + 1em)";
+					document.getElementById("logo-container").style.height = "50px";
+					document.getElementById("logo-container").style.width = "50px";
+					document.getElementById("logo-container").style.margin =  "0.5em 0 0.5em 3em";
+					document.getElementById("logo-container").getElementsByTagName("img")[0].classList.add("hidden");
+					document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "50px";
+					document.getElementById("logo-container").getElementsByTagName("img")[1].classList.remove("hidden");
+					document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "50px";
 
-            }
-            if (document.body.scrollTop < 70 && document.documentElement.scrollTop < 70) {
-                document.getElementById("nav-container").style.height = "calc(130px + 1em)";
-                document.getElementById("logo-container").style.height = "130px";
-                document.getElementById("logo-container").style.width = "130px";
-                document.getElementById("logo-container").style.margin = "0.5em 0 0.5em 3em";
-                document.getElementById("logo-container").getElementsByTagName("img")[0].classList.remove("hidden");
-                document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "130px";
-                document.getElementById("logo-container").getElementsByTagName("img")[1].classList.add("hidden");
-                document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "130px";
-            }
+				}
+				if (document.body.scrollTop < 70 && document.documentElement.scrollTop < 70) {
+					document.getElementById("nav-container").style.height = "calc(130px + 1em)";
+					document.getElementById("logo-container").style.height = "130px";
+					document.getElementById("logo-container").style.width = "130px";
+					document.getElementById("logo-container").style.margin = "0.5em 0 0.5em 3em";
+					document.getElementById("logo-container").getElementsByTagName("img")[0].classList.remove("hidden");
+					document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "130px";
+					document.getElementById("logo-container").getElementsByTagName("img")[1].classList.add("hidden");
+					document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "130px";
+				}
+			}
         }
     </script>
 </body>

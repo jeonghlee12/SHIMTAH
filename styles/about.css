@@ -5,63 +5,99 @@ html {
 
 body {
 	margin: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+.menu-container {
+    text-align: right;
+    z-index: 2;
+}
+
+.hamburger-icon {
+    position: fixed;
+    right: 0;
+    display: inline-block;
+    margin-top: 0.8em;
+    margin-right: 0.8em;
+    background-color: #FFF;
+    border-radius: 10%;
+    padding: 0.2em;
+}
+
+.bar {
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+  margin: 4px 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change #bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  -moz-ransform: rotate(-45deg) translate(-4px, 4px);
+  -ms-transform: rotate(-45deg) translate(-4px, 4px);
+  -o-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+  background-color: #000;
+}
+
+.change #bar2 {opacity: 0;}
+
+.change #bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -4px);
+  -moz-transform: rotate(45deg) translate(-5px, -4px);
+  -ms-transform: rotate(45deg) translate(-5px, -4px);
+  -o-transform: rotate(45deg) translate(-5px, -4px);
+  transform: rotate(45deg) translate(-5px, -4px);
+  background-color: #000;
 }
 
 #nav-container {
-    position: fixed;
+	z-index: 0;
+	position: fixed;
+	width: 0;
+	height: 100%;
+    right: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#nav-container.change {
     width: 100%;
-    display: flex;
-    flex-direction: row;
     background-color: #FFF;
-    transition: 0.3s;
-    height: calc(130px + 1em);
-}
-
-#nav-container div {
-    margin: auto 0;
-}
-
-#nav-container #logo-container {
-    height: 130px;
-    width: 130px;
-    margin: 0.5em auto;
-    margin-left: 3em;
-    margin-right: 0;
-    transition: 0.3s;
 }
 
 #logo-container img {
-    height: 130px;
-    transition: 0.15s linear;
-    opacity: 1;
-    position: fixed;
+	height: 100px;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	display: block;
 }
 
-.hidden {
-    opacity: 0 !important;
-}
-
-nav {margin-left: 1em;}
+.hidden {display: none !important}
 
 nav a {
-    color: #000;
+    display: block;
+	color: #000;
     font-family: "Alegreya Sans SC", 'Arial', sans-serif;
+    font-size: 17pt;
     font-weight: bold;
     border-bottom: 0.25rem solid transparent;
     text-decoration: none;
-    margin-left:15px;
-
-    font-size: 17pt;
+    text-align: center;
+    margin: 1.3em auto;
 }
-
-nav a:hover {
-    color: #777;
-    border-bottom-color: #777 !important;
-}
-
-nav a.active {border-bottom-color: #000}
-
-#nav-space {height: calc(130px + 1em)}
 
 main {
 	min-height: calc(100vh - 95px);
@@ -102,6 +138,43 @@ main {
 }
 
 @media (min-width: 768px) {
+	.menu-container {display: none}
+	#nav-container {
+		position: fixed;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		background-color: #FFF;
+		transition: 0.3s;
+		height: calc(130px + 1em);
+	}
+	#nav-container div, nav {margin: auto 0}
+	#nav-container #logo-container {
+		height: 130px;
+		width: 130px;
+		margin: 0.5em auto;
+		margin-left: 3em;
+		margin-right: 0;
+		transition: 0.3s;
+	}
+	#logo-container img {
+		height: 130px;
+		transition: 0.15s linear;
+		opacity: 1;
+		position: fixed;
+	}
+	.hidden {opacity: 0 !important}
+	nav {margin-left: 1em}
+	nav a {
+		display: inline;
+		margin-left:15px;
+		font-size: 17pt;
+	}
+	nav a:hover {
+		color: #777;
+		border-bottom-color: #777 !important;
+	}
+	nav a.active {border-bottom-color: #000}
     #space {width: 25px}
 }
 

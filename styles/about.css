@@ -79,9 +79,7 @@ body {
 
 #logo-container img {
 	height: 100px;
-	margin: auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin: 2em auto;
 	display: block;
 }
 
@@ -159,11 +157,16 @@ main {
 	}
 	#logo-container img {
 		height: 130px;
-		transition: 0.15s linear;
+		margin: auto;
 		opacity: 1;
 		position: fixed;
+		transition: 0.3s;
 	}
-	.hidden {opacity: 0 !important}
+	.hidden {
+		opacity: 0 !important;
+		display: block !important;
+		transition: 0.2s;
+	}
 	nav {margin-left: 1em}
 	nav a {
 		display: inline;

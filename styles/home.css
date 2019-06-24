@@ -362,11 +362,11 @@ main {
         background-color: #FFF !important;
     }
     #nav-container.unstuck {
-        -webkit-animation: slideUp 0.2s;
-        -moz-animation: slideUp 0.2s;
-        -ms-animation: slideUp 0.2s;
-        -o-animation: slideUp 0.2s;
-        animation: slideUp 0.2s;
+        -webkit-animation: slideUp 0.3s;
+        -moz-animation: slideUp 0.3s;
+        -ms-animation: slideUp 0.3s;
+        -o-animation: slideUp 0.3s;
+        animation: slideUp 0.3s;
         position: fixed;
     }
     .stuck a {color: #000}

@@ -83,10 +83,9 @@
         window.addEventListener('DOMContentLoaded', function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
-		if (window.innerWidth >= 768) {
-			window.onscroll = function() {scrollFunction()};
-
-			function scrollFunction() {
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (window.innerWidth >= 768) {
 				scroll_length = 120;
 				if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
 					document.getElementById("nav-container").style.height = "calc(50px + 1em)";

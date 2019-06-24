@@ -112,9 +112,9 @@
           x.classList.toggle("change");
           document.getElementById("nav-container").classList.toggle("change");
         }
-        if (window.innerWidth >= 768) {
-            window.onscroll = function() {scrollFunction()};
-            function scrollFunction() {
+        window.onscroll = function() {scrollFunction()};
+       	function scrollFunction() {
+        	if (window.innerWidth >= 768) {
                 scroll_length = window.innerHeight * 0.6;
                 if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
                     document.getElementById("nav-container").classList.add("stuck");

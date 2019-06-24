@@ -77,7 +77,6 @@ body {
 }
 
 #logo-container img {
-	height: 100px;
 	margin: 2em auto;
 	display: block;
 }
@@ -122,6 +121,12 @@ main {
 
 @media (max-width: 767px) {
 	#nav-container {height: 100% !important}
+	#logo-container {
+		height: auto !important;
+		width: auto !important;
+		margin: auto !important;
+	}
+	#logo-container img {height: 100px !important}
 	.hidden {display: none !important}
 }
 

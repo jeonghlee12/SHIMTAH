@@ -93,25 +93,15 @@
 			if (window.innerWidth >= 768) {
 				scroll_length = 120;
 				if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
-					document.getElementById("nav-container").style.height = "calc(50px + 1em)";
-					document.getElementById("logo-container").style.height = "50px";
-					document.getElementById("logo-container").style.width = "50px";
-					document.getElementById("logo-container").style.margin =  "0.5em 0 0.5em 3em";
+					document.getElementById("nav-container").classList.add("minimize");
 					document.getElementById("logo-container").getElementsByTagName("img")[0].classList.add("hidden");
-					document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "50px";
 					document.getElementById("logo-container").getElementsByTagName("img")[1].classList.remove("hidden");
-					document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "50px";
 
 				}
 				if (document.body.scrollTop < 70 && document.documentElement.scrollTop < 70) {
-					document.getElementById("nav-container").style.height = "calc(130px + 1em)";
-					document.getElementById("logo-container").style.height = "130px";
-					document.getElementById("logo-container").style.width = "130px";
-					document.getElementById("logo-container").style.margin = "0.5em 0 0.5em 3em";
+					document.getElementById("nav-container").classList.remove("minimize");
 					document.getElementById("logo-container").getElementsByTagName("img")[0].classList.remove("hidden");
-					document.getElementById("logo-container").getElementsByTagName("img")[0].style.height = "130px";
 					document.getElementById("logo-container").getElementsByTagName("img")[1].classList.add("hidden");
-					document.getElementById("logo-container").getElementsByTagName("img")[1].style.height = "130px";
 				}
 			}
         }

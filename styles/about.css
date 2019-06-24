@@ -147,7 +147,7 @@ main {
 	#nav-container {
 		position: fixed;
 		width: 100%;
-		height: calc(130px + 1em);
+		height: calc(100px + 1em);
 		display: flex;
 		flex-direction: row;
 		background-color: #FFF;
@@ -158,21 +158,24 @@ main {
 		-o-transition: 0.2s;
 		transition: 0.2s;
 	}
+	#nav-container.minimize {height: calc(50px + 1em)}
 	#nav-container div, nav {margin: auto 0}
 	#nav-container #logo-container {
-		height: 130px;
-		width: 130px;
-		margin: 0.5em auto;
-		margin-left: 3em;
-		margin-right: 0;
+		height: 100px;
+		width: 100px;
+		margin: 0.5em 0px 0.5em 3em;
 		-webkit-transition: 0.2s;
 		-moz-transition: 0.2s;
 		-ms-transition: 0.2s;
 		-o-transition: 0.2s;
 		transition: 0.2s;
 	}
+	#nav-container.minimize #logo-container {
+		height: 50px;
+		width: 50px;
+	}
 	#logo-container img {
-		height: 130px;
+		height: 100px;
 		margin: auto;
 		opacity: 1;
 		position: fixed;
@@ -182,6 +185,7 @@ main {
 		-o-transition: 0.2s;
 		transition: 0.2s;
 	}
+	#nav-container.minimize #logo-container img {height: 50px}
 	.hidden {
 		opacity: 0 !important;
 		-webkit-transition: 0.15s;
@@ -205,6 +209,12 @@ main {
 }
 
 @media (min-width: 1024px) {
+	#nav-container {height: calc(115px + 1em)}
+	#nav-container #logo-container{
+		height: 115px;
+		width: 115px;
+	}
+	#logo-container img {height: 115px}
 	nav a {
         margin-left: 20px;
         font-size: 15pt;
@@ -212,6 +222,12 @@ main {
 }
 
 @media (min-width: 1200px) {
+	#nav-container {height: calc(130px + 1em)}
+	#nav-container #logo-container{
+		height: 130px;
+		width: 130px;
+	}
+	#logo-container img {height: 130px}
 	nav a {
         margin-left: 30px;
         font-size: 17pt;

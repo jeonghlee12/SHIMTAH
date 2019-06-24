@@ -427,10 +427,6 @@ main {
 
 @media (min-width: 1400px) {
     #nav-container {padding-right:3em}
-    nav a {
-        margin-left: 30px;
-        font-size: 17pt;
-    }
     #main-message {
         font-size: 80pt;
         max-height: 165px;

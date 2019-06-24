@@ -194,7 +194,7 @@ main {
 	nav a {
 		display: inline;
 		margin-left:15px;
-		font-size: 17pt;
+		font-size: 11pt;
 	}
 	nav a:hover {
 		color: #777;
@@ -205,13 +205,19 @@ main {
 }
 
 @media (min-width: 1024px) {
-
+	nav a {
+        margin-left: 20px;
+        font-size: 15pt;
+    }
 }
 
 @media (min-width: 1200px) {
-
+	nav a {
+        margin-left: 30px;
+        font-size: 17pt;
+    }
 }
 
 @media (min-width: 1400px) {
-
+	
 }

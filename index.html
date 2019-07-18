@@ -35,13 +35,13 @@
     <link rel="preload" href="libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2" as="font" type="font/woff2" crossorigin>
     <script src="js/modernizr-custom.js"></script>
     <script>
-        document.documentElement.classList.remove("no-js");
-        Modernizr.on('webp', function (result) {
-            console.log(result);
-            if (result) {// supported
-            } else {// not-supported
-            }
-        });
+    document.documentElement.classList.remove("no-js");
+    Modernizr.on('webp', function (result) {
+        console.log(result);
+        if (result) {// supported
+        } else {// not-supported
+        }
+    });
     </script>
 
     <style>@font-face{font-family:'Alegreya Sans SC';font-display:swap;src:local('Alegreya Sans SC'),local('Alegreya Sans SC Regular'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'Do Hyeon Regular';font-display:swap;src:local("Do Hyeon"),local("Do Hyeon Regular"),url(libraries/font_subsets/Do_Hyeon/DoHyeon-Regular.subset.woff2) format('woff2'),url(libraries/font_subsets/Do_Hyeon/DoHyeon-Regular.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'East Sea Dokdo Regular';font-display:swap;src:local('East Sea Dokdo'),local('East Sea Dokdo Regular'),url(libraries/font_subsets/East_Sea_Dokdo/EastSeaDokdo-Regular.subset.woff2) format('woff2'),url(libraries/font_subsets/East_Sea_Dokdo/EastSeaDokdo-Regular.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:'HanS Calli';font-display:swap;src:local('HanS'),local('HanS Calli'),local('HanS Calli Regular'),url(libraries/font_subsets/HanS_Calli/HanSCalli.subset.woff2) format('woff2'),url(libraries/font_subsets/HanS_Calli/HanSCalli.subset.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;src:local("Font Awesome 5 Brands"),local("Font Awesome 5 Brands Regular"),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2) format('woff2'),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
@@ -57,7 +57,7 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
 </head>
 <body>
     <div class="menu-container">
@@ -68,18 +68,18 @@
         </div>
     </div>
     <div id="nav-container">
-    	<div id="logo-container">
-       		<picture>
-            	<source srcset="images/favicons_and_logos/shimtah-logo.webp" type="image/webp">
+        <div id="logo-container">
+            <picture>
+                <source srcset="images/favicons_and_logos/shimtah-logo.webp" type="image/webp">
                 <img src="images/favicons_and_logos/shimtah-logo.png" alt="Shimtah logo black">
             </picture>
         </div>
-		<nav>
-			<a href="about.html">About</a>
-			<a>Instruments</a>
-			<a>Photo Album</a>
-			<a>Videos</a>
-		</nav>
+        <nav>
+            <a href="about.html">About</a>
+            <a>Instruments</a>
+            <a>Photo Album</a>
+            <a>Videos</a>
+        </nav>
     </div>
 
     <div id="introduction-wrapper">
@@ -89,7 +89,7 @@
                     Welcome to SHIMTAH <span>심타</span>
                 </div>
                 <div id="description">
-                    Traditional Korean <span><br/></span>Drumming Club
+                    Traditional Korean <span><br></span>Drumming Club
                 </div>
             </div>
             <div id="logo">
@@ -111,12 +111,12 @@
 
     <script>
         function toggleNav(x) {
-          x.classList.toggle("change");
-          document.getElementById("nav-container").classList.toggle("change");
+            x.classList.toggle("change");
+            document.getElementById("nav-container").classList.toggle("change");
         }
         window.onscroll = function() {scrollFunction()};
-       	function scrollFunction() {
-        	if (window.innerWidth >= 768) {
+        function scrollFunction() {
+            if (window.innerWidth >= 768) {
                 scroll_length = window.innerHeight * 0.6;
                 if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
                     document.getElementById("nav-container").classList.add("stuck");

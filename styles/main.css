@@ -11,7 +11,7 @@ body {
 
 .menu-container {
     text-align: right;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hamburger-icon {
@@ -58,7 +58,7 @@ body {
 }
 
 #nav-container {
-	z-index: 0;
+	z-index: 2;
 	position: fixed;
 	width: 0;
     right: 0;
@@ -93,10 +93,7 @@ nav a {
     margin: 1.3em auto;
 }
 
-main {
-	min-height: calc(100vh - 95px);
-	padding-top: calc(130px + 1em);
-}
+main {min-height: calc(100vh - 95px)}
 
 .icons {
     text-align: center;
@@ -205,6 +202,7 @@ main {
 		border-bottom-color: #777 !important;
 	}
 	nav a.active {border-bottom-color: #000}
+    main {padding-top: calc(100px + 1em)}
     #space {width: 25px}
 }
 
@@ -219,6 +217,7 @@ main {
         margin-left: 20px;
         font-size: 15pt;
     }
+    main {padding-top: calc(115px + 1em)}
 }
 
 @media (min-width: 1200px) {
@@ -232,8 +231,9 @@ main {
         margin-left: 30px;
         font-size: 17pt;
     }
+    main {padding-top: calc(130px + 1em)}
 }
 
 @media (min-width: 1400px) {
-	
+
 }

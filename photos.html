@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2b5797">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Shimtah">
+    <meta name="application-name" content="Shimtah">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#FFF">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cornell Shimtah">
+    <meta name="subject" content="Cornell's traditioal Korean drumming club">
+    <meta name="keywords" content="Cornell, Shimtah, club, Ithaca, Korean, traditional, drumming, students, activity">
+    <meta name="author" content="Jeong Hyun Lee">
+    <meta name="revised" content="20190609">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="Expires" content="604860">
+
+    <meta property="og:title" content="Cornell Shimtah">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="shimtah-logo-black-white">
+    <title>Shimtah | Photo Album</title>
+
+    <link rel="preload" href="libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>@font-face{font-family:'Alegreya Sans SC';font-display:swap;src:local('Alegreya Sans SC'),local('Alegreya Sans SC Regular'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),url(libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;src:local("Font Awesome 5 Brands"),local("Font Awesome 5 Brands Regular"),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff2) format('woff2'),url(libraries/font_subsets/fontawesome/fa-brands-400.subset.woff) format('woff');font-weight:400;font-style:normal}</style>
+    <link rel="preload" href="styles/home-external.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/photos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="styles/home-external.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/photos.css">
+    </noscript>
+    <script>
+        !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+    <script src="js/photos.js" defer></script>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="hamburger-icon" onclick="toggleNav(this)">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+    </div>
+    <div id="nav-container">
+        <div id="logo-container">
+            <picture>
+                <source srcset="images/favicons_and_logos/shimtah-logo.webp" type="image/webp">
+                <img src="images/favicons_and_logos/shimtah-logo.png" alt="Shimtah logo black">
+            </picture>
+            <picture>
+                <source srcset="images/favicons_and_logos/favicon.webp" type="image/webp">
+                <img src="images/favicons_and_logos/favicon.png" alt="Shimtah logo without text" class="hidden">
+            </picture>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a>Instruments</a>
+            <a href="photos.html" class="active">Photo Album</a>
+            <a>Videos</a>
+        </nav>
+    </div>
+    <main>
+        <div class="slideshow-container">
+            <div class="slide" style="display: block">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/index.jpg">
+            </div>
+            <div class="slide">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/index2.jpg">
+            </div>
+            <div class="slide">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/index.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(1, false)"></span>
+                <span class="dot" onclick="currentSlide(2, false)"></span>
+                <span class="dot" onclick="currentSlide(3, false)"></span>
+            </div>
+        </div>
+    </main>
+    <div class="icons">
+        <a href="https://www.facebook.com/shimtah" target="_blank" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fab fa-facebook"></i></a>
+        <div id="space"></div>
+        <a href="https://www.youtube.com/user/CornellShimtah" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="top"><i class="fab fa-youtube"></i></a>
+    </div>
+    <script>
+        function toggleNav(x) {
+            x.classList.toggle("change");
+            document.getElementById("nav-container").classList.toggle("change");
+        }
+        window.addEventListener('DOMContentLoaded', function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (window.innerWidth >= 768) {
+                scroll_length = 120;
+                if (document.body.scrollTop > scroll_length || document.documentElement.scrollTop > scroll_length) {
+                    document.getElementById("nav-container").classList.add("minimize");
+                    document.getElementById("logo-container").getElementsByTagName("img")[0].classList.add("hidden");
+                    document.getElementById("logo-container").getElementsByTagName("img")[1].classList.remove("hidden");
+                }
+                if (document.body.scrollTop < 70 && document.documentElement.scrollTop < 70) {
+                    document.getElementById("nav-container").classList.remove("minimize");
+                    document.getElementById("logo-container").getElementsByTagName("img")[0].classList.remove("hidden");
+                    document.getElementById("logo-container").getElementsByTagName("img")[1].classList.add("hidden");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
